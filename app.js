@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
 const result = document.getElementById('result');
+const inputUser = document.getElementById("userInput");
 
 
 
@@ -28,8 +29,9 @@ button.addEventListener('click', () => {
 
 })
 
-// button.addEventListener("click", function(){
-//     location.reload();
-
-
-// })
+inputUser.addEventListener("keyup", function (event) {
+    if (event.code === 'Enter') {
+      event.preventDefault();
+      document.getElementById("button").click();
+    }
+  });
