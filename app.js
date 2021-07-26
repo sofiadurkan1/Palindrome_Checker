@@ -2,7 +2,9 @@ const button = document.getElementById('button');
 const result = document.getElementById('result');
 
 
+
 button.addEventListener('click', () => {
+  
 
     result.innerHTML = 'Loading...';
 
@@ -25,3 +27,9 @@ button.addEventListener('click', () => {
     
 
 })
+
+// button.addEventListener("click", function(){
+//     location.reload();
+
+
+// })
